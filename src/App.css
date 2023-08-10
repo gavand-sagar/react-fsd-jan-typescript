@@ -1,0 +1,161 @@
+div{
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.spinner{
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 8px solid blue;
+    border-radius: 50%;
+    border-bottom-color: lightgray;
+    animation: spin 1s infinite linear;
+}
+
+.loader-background{
+    position: fixed;
+    top :0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.456);
+}
+
+@keyframes spin{
+    0%{
+        rotate: 0;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.note-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+}
+
+.flex-two{
+    display: flex;
+    justify-content: space-around;
+}
+
+.book-item{
+    width: 200px;
+    height: 400px;
+    display: inline-block;
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+.book-category{
+ background-color: gray;
+ color: aliceblue;
+ padding: 5px;
+ border-radius: 1em;   
+ margin-right: 5px;
+}
+
+.post-item{
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+.post-item .heading{
+   display: flex;
+   gap: 15px;
+   height: 3rem;
+   align-items: center;
+}
+
+
+.app-header{
+    z-index: 10;
+    background-color: #1976d2;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+#app-file-upload{
+    display: none;
+}
+
+.file-upload-component{
+    width: 100px ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.file-upload-component>img{
+    width: 70px;
+}
+
+
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-reply-btn{
+    font-weight: bold;
+    margin-left: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.comment-form{
+    margin-top:20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reply-form{
+    margin-top:20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.comment-replies-container{
+    margin-left: 15px;
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
+.login-page-container{
+    display: flex;
+    justify-content: center;
+}
+
+.app-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-name>a{
+    color: white;
+    text-decoration: none;
+}
